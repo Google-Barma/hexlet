@@ -1,7 +1,7 @@
 "use strict";
 
-const revers = (str) => {
-  let reversStr = "";
+const reverse = (str) => {
+  let reverseStr = "";
   for (let i = str.length - 1; i >= 0; i -= 1) {
     reversStr += str[i];
     console.log(str[i]);
