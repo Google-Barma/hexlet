@@ -8,13 +8,13 @@ if (userInput === 'Админ') {
   userPass = prompt('Введите пароль');
   if (userPass === 'Я главный') {
     alert('Здравствуйте!');
-  } else if (userPass === null) {
+  } else if (userPass === '' || userPass === null) {
     alert('Отменено пользователем!');
   } else {
     alert('Не верный пароль!');
   }
-} else if (userInput === null) {
+} else if (userInput === '' || userInput === null) {
   alert('Отменено');
 } else {
-  alert('Не верный пароль!');
+  alert('Не верный логин!');
 }
