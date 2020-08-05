@@ -3,17 +3,12 @@
 const addDigits = num => {
   let arrNum;
 
-  const sumNumbers = num => {
-    arrNum = num
-      .toString()
-      .split('')
-      .reduce((acc, number) => acc + +number, 0);
+  arrNum = num
+    .toString()
+    .split('')
+    .reduce((acc, number) => acc + +number, 0);
 
-    return arrNum.toString().length > 1 ? sumNumbers(arrNum) : arrNum;
-  };
-  sumNumbers(num);
-
-  return arrNum;
+  return arrNum.toString().length > 1 ? addDigits(arrNum) : arrNum;
 };
 
 console.log(addDigits(10)); // 1
