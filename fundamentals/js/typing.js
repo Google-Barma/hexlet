@@ -1,5 +1,6 @@
 'use strict';
 
+// складывает числа, пока не получится одна цифра
 const addDigits = num => {
   let arrNum;
 
