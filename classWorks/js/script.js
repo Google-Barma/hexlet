@@ -11,9 +11,6 @@ function uppercaseFirstLatter(string) {
     .join(' ');
 }
 
-// const str = ' many different words inside sentence';
-// console.log(str.split(' '));
-
 console.log(uppercaseFirstLatter('hello, word!'));
 console.log(uppercaseFirstLatter(' many different words  inside sentence'));
 console.log(uppercaseFirstLatter('  hello,   world!'));
